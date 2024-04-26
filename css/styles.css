@@ -210,7 +210,7 @@ a {
     font-weight: 600;
     margin: 1rem 0;
     outline: 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -306,6 +306,7 @@ button.icon {
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
 }
 
 .input-group .btn {
@@ -385,10 +386,6 @@ button.icon {
     letter-spacing: 1px;
 }
 
-.plan--popular {
-    transform: scale(1.1)
-}
-
 .plan--popular .card__header {
     position: relative;
 }
@@ -407,12 +404,20 @@ button.icon {
 }
 
 .plan--popular:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
 
 @media only screen and (min-width: 1024px) {
     .plan__name {
         font-size: 1.4rem;
+    }
+
+    .plan--popular {
+        transform: scale(1.1)
+    }
+
+    .plan--popular:hover {
+        transform: scale(1.15);
     }
 
     .plan__price {
@@ -518,6 +523,10 @@ button.icon {
 
 .testimonial {
     padding: 3.5rem;
+}
+
+.testimonial footer {
+    background-color: #fff;
 }
 
 .testimonial__image {
@@ -683,6 +692,10 @@ button.icon {
     padding: 0 1rem;
 }
 
+.nav.collapsible {
+    margin-bottom: 0;
+}
+
 .nav__brand {
     transform: translateY(5px);
 }
@@ -772,8 +785,9 @@ button.icon {
 }
 
 .block-domain__prices {
+    color: var(--color-heading);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     justify-items: center;
     max-width: 700px;
