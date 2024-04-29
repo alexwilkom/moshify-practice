@@ -14,7 +14,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
@@ -22,7 +21,7 @@
 <body>
     <header>
         <nav class="nav collapsible">
-            <a class="nav__brand" href="/"><img src="./images/logo.svg" alt=""></a>
+            <a aria-label="Moshify Logo" class="nav__brand" href="/"><img src="./images/logo.svg" alt=""></a>
             <svg class="icon icon--white nav__toggler">
                 <use href="images/sprite.svg#menu"></use>
             </svg>
@@ -54,7 +53,7 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, accusantium?</p>
         </header>
         <div class="input-group">
-            <input type="text" class="input" placeholder="Enter domain name here">
+            <input aria-label="Domain" type="text" class="input" placeholder="Enter domain name here">
             <button class="btn btn--accent">
                 <svg class="icon icon--white">
                     <use href="images/sprite.svg#search"></use>
@@ -173,7 +172,7 @@
             <picture data-aos="fade-left">
                 <source srcset="./images/easy.webp 1x, ./images/easy@2x.webp 2x" type="image/webp">
                 <source srcset="./images/easy.jpg 1x, ./images/easy@2x.jpg 2x" type="image/jpg">
-                <img class="feature__image" src="./images/easy@2x.jpg" alt="">
+                <img class="feature__image" loading="lazy" src="./images/easy@2x.jpg" alt="">
             </picture>
         </article>
         <article class="grid grid--1x2 feature">
@@ -195,7 +194,7 @@
             <picture data-aos="fade-right">
                 <source srcset="./images/support.webp 1x, ./images/support@2x.webp 2x" type="image/webp">
                 <source srcset="./images/support.jpg 1x, ./images/support@2x.jpg 2x" type="image/jpg">
-                <img class="feature__image" src="./images/support@2x.jpg" alt="">
+                <img class="feature__image" loading="lazy" src="./images/support@2x.jpg" alt="">
             </picture>
         </article>
         <article class="grid grid--1x2 feature">
@@ -217,7 +216,7 @@
             <picture data-aos="fade-left">
                 <source srcset="./images/wordpress.webp 1x, ./images/wordpress@2x.webp 2x" type="image/webp">
                 <source srcset="./images/wordpress.jpg 1x, ./images/wordpress@2x.jpg 2x" type="image/jpg">
-                <img class="feature__image" src="./images/wordpress@2x.jpg" alt="">
+                <img class="feature__image" loading="lazy" src="./images/wordpress@2x.jpg" alt="">
             </picture>
         </article>
 
@@ -230,7 +229,7 @@
             <picture class="block-showcase__image" data-aos="fade-right">
                 <source type="image/webp" srcset="./images/ipad.webp 1x, ./images/ipad@2x.webp 2x">
                 <source type="image/png" srcset="./images/ipad.png 1x, ./images/ipad@2x.png 2x">
-                <img src="./images/ipad@2x.png" alt="">
+                <img src="./images/ipad@2x.png" loading="lazy" alt="">
             </picture>
             <ul class="list" data-aos="fade-left">
                 <li>
@@ -299,7 +298,7 @@
             <div class="card testimonial">
                 <div class="grid grid--1x2">
                     <div class="testimonial__image">
-                        <img src="./images/testimonial.jpg" alt="A man smiling.">
+                        <img src="./images/testimonial.jpg" loading="lazy" alt="A man smiling.">
                         <span class="icon-container icon-container--accent">
                             <svg class="icon icon--white icon--small">
                                 <use href="images/sprite.svg#quotes"></use>
@@ -336,7 +335,7 @@
             <section class="collapsible collapsible--expanded footer__section">
                 <div class="collapsible__header">
                     <h2 class="collapsible__heading footer__heading">Item 1</h2>
-                    <button class="icon collapsible__chevron"></button>
+                    <button class="icon collapsible__chevron" aria-label="Arrow icon"></button>
                 </div>
                 <div class="collapsible__content">
                     <ul class="list">
@@ -349,7 +348,7 @@
             <section class="collapsible footer__section">
                 <div class="collapsible__header">
                     <h2 class="collapsible__heading footer__heading">Company</h2>
-                    <button class="icon collapsible__chevron"></button>
+                    <button class="icon collapsible__chevron" aria-label="Arrow icon"></button>
                 </div>
                 <div class="collapsible__content">
                     <ul class="list">
@@ -362,7 +361,7 @@
             <section class="collapsible footer__section">
                 <div class="collapsible__header">
                     <h2 class="collapsible__heading footer__heading">Support</h2>
-                    <button class="icon collapsible__chevron"></button>
+                    <button class="icon collapsible__chevron" aria-label="Arrow icon"></button>
                 </div>
                 <div class="collapsible__content">
                     <ul class="list">
@@ -375,7 +374,7 @@
             <section class="collapsible footer__section">
                 <div class="collapsible__header">
                     <h2 class="collapsible__heading footer__heading">Domains</h2>
-                    <button class="icon collapsible__chevron"></button>
+                    <button class="icon collapsible__chevron" aria-label="Arrow icon"></button>
                 </div>
                 <div class="collapsible__content">
                     <ul class="list">
@@ -386,7 +385,7 @@
                 </div>
             </section>
             <div class="footer__brand">
-                <img src="images/logo.svg" alt="">
+                <img src="images/logo.svg" loading="lazy" alt="">
                 <p class="footer__copyright">Copyright 2020 Mosh Hamedani</p>
             </div>
         </div>
